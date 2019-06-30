@@ -13,6 +13,7 @@ Use this link **chrome://dino/** to access the game even when you have internet 
 I capture a screenshot every frame to look for obstacles to avoid.
 
 There are 2 search ranges to find obstacles:
+
 1- To look for the ground obstacles (**Cactus**).
 
 2- To look for the upper obstacles (**Birds**).
