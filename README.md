@@ -22,6 +22,6 @@ There are 2 search ranges to find obstacles:
 An obstacle is connsidered any pixel in the search area that is different than the background colour.
 If the bot finds an obstacle it uses the python **keyboard** library to press space and let the Dino jump.
 ***
-The high score so far is **4371**.
+The high score so far is **14490**.
 
 Any recommendations are welcomed
