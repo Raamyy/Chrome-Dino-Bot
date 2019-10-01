@@ -1,5 +1,5 @@
 # Chrome Dino Bot
-A bot that plays the boring chrome dinasour game that appears when no internet available.
+A bot that plays the boring chrome dinosaur game that appears when no internet available.
 ***
 ![Game Screenshot](https://9to5google.com/wp-content/uploads/sites/4/2018/09/chrome-offline-dino-game.jpg?quality=82&strip=all)
 
