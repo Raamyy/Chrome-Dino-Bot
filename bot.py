@@ -1,7 +1,6 @@
 import pyautogui as gui
 import keyboard
-import time
-import math
+import time       
 # Set a debug flag for verbose output
 debug_flag=True
 
@@ -55,7 +54,7 @@ while True:
         x_end += 4
         if x_end >= width:
             x_end = width
-        last = math.floor(total_time)
+        last = int(total_time)
 
     # Get a screen shot
     sct_img = gui.screenshot(region=(left,top, width, height))
