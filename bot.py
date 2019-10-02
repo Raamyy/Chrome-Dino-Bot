@@ -5,11 +5,16 @@ import math
 # Set a debug flag for verbose output
 debug_flag=True
 
+
 if debug_flag:
     print("Starting. Press Q to quit")
+
+#Startup time to switch tabs     
+time.sleep(5)
+
 # Helper function to get value of pixel in image
 def getPixel(Image,x, y):
-    px = Image.load()
+    px = Image.load()              
     return px[x, y]
 
 
@@ -25,6 +30,7 @@ screenDimensions = {
 # helper variables to calculate time
 last = 0
 total_time = 0
+screenshot_counter=0
 
 # the intervals where the bot will search for obstacles
 y_search, x_start, x_end = 350, 435, 450
@@ -45,7 +51,7 @@ while True:
         break
 
     # increase the search width every second to simulate the dino acceleration
-    if math.floor(total_time) != last:
+    if int(total_time) != last:
         x_end += 4
         if x_end >= width:
             x_end = width
@@ -53,7 +59,9 @@ while True:
 
     # Get a screen shot
     sct_img = gui.screenshot(region=(left,top, width, height))
-
+    if debug_flag:
+        sct_img.save("screenshot" + str(screenshot_counter) +".png")
+        screenshot_counter += 1
 
     #Check for cacti - do a scan of the image low down
     for i in reversed(range(x_start, x_end)):
