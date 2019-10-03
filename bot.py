@@ -35,13 +35,7 @@ screenshot_counter=0
 y_search, x_start, x_end = 350, 435, 450
 y_search2 = 275 # for the birds
 
-# get background colour at beginning to increase efficiency 
 
-# Get a screen shot
-sct_img = gui.screenshot(region=(left,top, width, height))
-
-# Get the color of the world background
-bgColor = getPixel(sct_img, 440, 30)
 
 time.sleep(1)
 while True:
@@ -58,6 +52,11 @@ while True:
 
     # Get a screen shot
     sct_img = gui.screenshot(region=(left,top, width, height))
+
+    # Get the color of the world background
+    bgColor = getPixel(sct_img, 440, 30)
+
+
     if debug_flag:
         sct_img.save("screenshot" + str(screenshot_counter) +".png")
         screenshot_counter += 1
