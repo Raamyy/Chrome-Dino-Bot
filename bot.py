@@ -30,12 +30,13 @@ y_search2 = 275 # for the birds
 time.sleep(1)
 while True:
     t1 = time.time()
-    if keyboard.is_pressed('q'): # Emergency Button
+    if keyboard.is_pressed('e'): # Emergency Button
         break
 
     # increase the search width every second to simulate the dino acceleration
     if math.floor(total_time) != last:
         x_end += 4
+    
         if x_end >= width:
             x_end = width
         last = math.floor(total_time)
@@ -62,4 +63,4 @@ while True:
 
     # DEBUG
     print(x_end)
-
+    print(total_time,t2)
