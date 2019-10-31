@@ -19,7 +19,7 @@ There are 2 search ranges to find obstacles:
 2- To look for the upper obstacles (**Birds**).
 
 #### How to identify obstacle?
-An obstacle is connsidered any pixel in the search area that is different than the background colour.
+An obstacle is considered any pixel in the search area that is different than the background colour.
 If the bot finds an obstacle it uses the python **keyboard** library to press space and let the Dino jump.
 ***
 The high score so far is **14490**.
